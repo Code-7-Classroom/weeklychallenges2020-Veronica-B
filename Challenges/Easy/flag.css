@@ -1,0 +1,44 @@
+* {
+padding:0;
+margin:0;
+}
+
+#table {
+width:100%;
+border: 1px solid black; 
+}
+
+.stars{
+    background-image: url("../easy.jpg") ;
+    background-repeat: no-repeat;
+    height:250px;
+    width:50%;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.red-small{
+    background:red;
+    height:50px;
+    width:50%;
+}
+
+.red-large{
+    background:red;
+    height:50px;
+    width:100%;
+}
+
+
+.white-small{
+    background:white;
+    height:50px;
+    width:50%;
+}
+
+.white-large{
+    background:white;
+    height:50px;
+    width:100%;
+}

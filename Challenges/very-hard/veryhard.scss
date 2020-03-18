@@ -1,0 +1,79 @@
+$color:black;
+$margin:50px;
+$lineheight:50px;
+$font-size: 23px;
+$border: solid $color 1px;
+
+
+*{
+    padding:0;
+    margin:0;
+}
+.newspaper_name{
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 20px 0px;
+}
+.title{
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 100px 0px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(3, 490px);
+    grid-template-rows: 400px 1550px ;
+   
+
+    &__column--lines{
+        border-left: $border;
+        border-top: $border;
+        border-right: $border;
+        grid-row-start: 1;
+        grid-row-end: 3;
+
+
+        &__picture{
+        margin:$margin;
+        height:300px;
+        width:395px;
+        border: $border;
+     }
+     
+     &__paragraph--1{
+        line-height: $lineheight;
+        font-size: $font-size;
+        margin:$margin;
+    
+    }
+
+    &__paragraph--1::after{
+        content: "--------> Find Out More on Page 3!"; 
+        color: $color;
+        font-weight: bold;
+    }
+    &__paragraph--2{
+        line-height: $lineheight;
+        font-size: $font-size;
+        margin:$margin;
+    
+    }
+    &__paragraph--3{
+        line-height: $lineheight;
+        font-size: $font-size;
+        margin:$margin;
+            
+    }
+    &__paragraph--3::after{
+        content: "--------> Find Out More on Page 9!"; 
+        color: $color;
+        font-weight: bold;
+    }
+    
+  }
+}

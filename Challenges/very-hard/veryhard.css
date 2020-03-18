@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.newspaper_name {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0 20px 0px;
+}
+
+.title {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px 0 100px 0px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (490px)[3];
+      grid-template-columns: repeat(3, 490px);
+  -ms-grid-rows: 400px 1550px;
+      grid-template-rows: 400px 1550px;
+}
+
+.container__column--lines {
+  border-left: solid black 1px;
+  border-top: solid black 1px;
+  border-right: solid black 1px;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.container__column--lines__picture {
+  margin: 50px;
+  height: 300px;
+  width: 395px;
+  border: solid black 1px;
+}
+
+.container__column--lines__paragraph--1 {
+  line-height: 50px;
+  font-size: 23px;
+  margin: 50px;
+}
+
+.container__column--lines__paragraph--1::after {
+  content: "--------> Find Out More on Page 3!";
+  color: black;
+  font-weight: bold;
+}
+
+.container__column--lines__paragraph--2 {
+  line-height: 50px;
+  font-size: 23px;
+  margin: 50px;
+}
+
+.container__column--lines__paragraph--3 {
+  line-height: 50px;
+  font-size: 23px;
+  margin: 50px;
+}
+
+.container__column--lines__paragraph--3::after {
+  content: "--------> Find Out More on Page 9!";
+  color: black;
+  font-weight: bold;
+}
+/*# sourceMappingURL=veryhard.css.map */
