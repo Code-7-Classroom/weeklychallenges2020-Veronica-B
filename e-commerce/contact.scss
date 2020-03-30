@@ -1,0 +1,137 @@
+$palegreen:#ccffcc;
+$light-lime:#f1ffc9;
+$mint:#b3ffb3;
+$font-family: Merriweather, Arial, sans-serif;
+$darkblue:#000066;
+$creme-page:#ffffe6;
+$border1px: solid 1px;
+
+*{
+    padding:0;
+    margin:0;
+}
+
+.flexbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    border-radius: 20%;
+    margin:5%; 
+    border: 2px solid $mint;
+    background-color: $light-lime;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.message{
+    color:$darkblue;
+    text-align:center;
+    margin-top:3%;
+    font-size: 25px;
+}
+
+.label{
+    margin: 3%;
+    display:block;
+    color:$darkblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+.input-text{
+    height:50px;
+    font-size:25px;
+    width:50%;
+    background-color: #ffffe6;
+    border:none;
+    border: $border1px $darkblue;
+}
+
+.textarea{
+    resize:none;
+    display:block;
+    height:25vh;
+    width:70vw;
+    margin:0 7% 0 7%;
+    border: $border1px $darkblue;
+    background-color:$creme-page;
+    font-size: 25px;
+}
+
+.button{
+    background-color:$palegreen;
+    border-radius: 10px ;
+    color:$darkblue;
+    font-size:25px;
+    margin:7% 39% 7% 39%;
+    padding:30px 45px 30px 45px;
+}
+
+
+
+@media only screen and (min-width: 569px) and (max-width:999px){
+    
+    .message{
+        margin-top:5%;
+        font-size: 20px;
+    }
+    
+    .label{
+        margin: 2%;
+    }
+    
+}
+    
+
+
+/*Contact Mobile*/
+@media only screen and (max-width: 568px) and (orientation: portrait){
+
+   .container{
+       background-color: $creme-page;
+       border: none;
+   }
+ 
+.message{
+    margin-top:5%;
+    font-size: 15px;
+}
+
+.label{
+    margin: 3%;
+    display:block;
+    color:$darkblue;
+    font-size: 15px;
+    text-align: center;
+}
+
+.input-text{
+    margin: 2%;
+    width:95%;
+    border:none;
+    border-bottom: $border1px $darkblue;
+}
+
+.textarea{
+    height:20vh;
+    font-size:14px;
+    width:85vw;
+    margin:0 7% 0 7%;
+    background-color: white;
+}
+
+ .button{
+        font-size:15px;
+        padding:10px 15px 10px 15px;
+    }
+
+
+}
+

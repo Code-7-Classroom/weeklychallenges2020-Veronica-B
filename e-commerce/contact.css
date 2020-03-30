@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  border-radius: 20%;
+  margin: 5%;
+  border: 2px solid #b3ffb3;
+  background-color: #f1ffc9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message {
+  color: #000066;
+  text-align: center;
+  margin-top: 3%;
+  font-size: 25px;
+}
+
+.label {
+  margin: 3%;
+  display: block;
+  color: #000066;
+  font-size: 30px;
+  text-align: center;
+}
+
+.input-text {
+  height: 50px;
+  font-size: 25px;
+  width: 50%;
+  background-color: #ffffe6;
+  border: none;
+  border: solid 1px #000066;
+}
+
+.textarea {
+  resize: none;
+  display: block;
+  height: 25vh;
+  width: 70vw;
+  margin: 0 7% 0 7%;
+  border: solid 1px #000066;
+  background-color: #ffffe6;
+  font-size: 25px;
+}
+
+.button {
+  background-color: #ccffcc;
+  border-radius: 10px;
+  color: #000066;
+  font-size: 25px;
+  margin: 7% 39% 7% 39%;
+  padding: 30px 45px 30px 45px;
+}
+
+@media only screen and (min-width: 569px) and (max-width: 999px) {
+  .message {
+    margin-top: 5%;
+    font-size: 20px;
+  }
+  .label {
+    margin: 2%;
+  }
+}
+
+/*Contact Mobile*/
+@media only screen and (max-width: 568px) and (orientation: portrait) {
+  .container {
+    background-color: #ffffe6;
+    border: none;
+  }
+  .message {
+    margin-top: 5%;
+    font-size: 15px;
+  }
+  .label {
+    margin: 3%;
+    display: block;
+    color: #000066;
+    font-size: 15px;
+    text-align: center;
+  }
+  .input-text {
+    margin: 2%;
+    width: 95%;
+    border: none;
+    border-bottom: solid 1px #000066;
+  }
+  .textarea {
+    height: 20vh;
+    font-size: 14px;
+    width: 85vw;
+    margin: 0 7% 0 7%;
+    background-color: white;
+  }
+  .button {
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+  }
+}
+/*# sourceMappingURL=contact.css.map */
