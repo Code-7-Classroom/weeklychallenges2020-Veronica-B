@@ -1,3 +1,5 @@
+//Nav 4 mobile
+
 var side_Nav= document.querySelector('.side_navigation_mobile');
 var x_icon= document.querySelector('.x');
 var hamburger_Icon= document.getElementById('side-nav');
@@ -26,10 +28,6 @@ function no_show_Side_Nav(){
 hamburger_Icon.addEventListener("click",show_Side_Nav);
 
 x_icon.addEventListener("click",no_show_Side_Nav);
-
-
-
-
 
 
 

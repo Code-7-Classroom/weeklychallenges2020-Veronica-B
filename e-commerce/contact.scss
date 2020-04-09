@@ -20,7 +20,7 @@ $border1px: solid 1px;
 
 .container{
     border-radius: 20%;
-    margin:5%; 
+    margin:3%; 
     border: 2px solid $mint;
     background-color: $light-lime;
     display:flex;
@@ -38,7 +38,7 @@ $border1px: solid 1px;
 }
 
 .label{
-    margin: 3%;
+    margin: 1.5%;
     display:block;
     color:$darkblue;
     font-size: 30px;
@@ -52,26 +52,30 @@ $border1px: solid 1px;
     background-color: #ffffe6;
     border:none;
     border: $border1px $darkblue;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
 }
 
 .textarea{
     resize:none;
     display:block;
-    height:25vh;
+    height:15vh;
     width:70vw;
     margin:0 7% 0 7%;
     border: $border1px $darkblue;
     background-color:$creme-page;
     font-size: 25px;
+    border-bottom-left-radius: 30px ;
+    border-bottom-right-radius: 30px ;
 }
 
 .button{
     background-color:$palegreen;
-    border-radius: 10px ;
+    border-radius: 30px ;
     color:$darkblue;
-    font-size:25px;
+    font-size:35px;
     margin:7% 39% 7% 39%;
-    padding:30px 45px 30px 45px;
+    padding:30px 85px 30px 85px;
 }
 
 

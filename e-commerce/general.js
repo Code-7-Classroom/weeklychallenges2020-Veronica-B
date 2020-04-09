@@ -4,7 +4,7 @@ var img=document.getElementById('img');
 var i= 0;
 
 //0 1 2
-var images= ['img1.jpg', 'img2.jpg', 'img3.jpg'];
+var images= ['images/img1.jpg', 'images/img2.jpg', 'images/img3.jpg'];
 //10000 is equaled to 10 seconds.
 var time= 10000;
 
