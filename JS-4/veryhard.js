@@ -17,10 +17,11 @@
 // Note: You may assume that you have an infinite number of each kind of coin.
 
 
-let coinsArray=[7,3,5];
-const target=8;
-let reset=0;
+let coinsArray=[7,2,5];
+const target=100;
 let amount=target;
+let bignumofcoins=0;
+let mednumofcoins=0;
 let numofcoins=0;
 let i=0;
 
@@ -28,10 +29,12 @@ coinsArray.sort(function(a, b){return b-a})
 //the array will now be descending order no matter what numbers are inserted
 
 //I want to subtract -5 to the amount
-let sentence= (numofcoins, coinsArrays, t)=>{
-    console.log(`i ran ${numofcoins} with ${coinsArrays[t]}`)
+let sentence= (numofcoins)=>{
+    console.log(`i ran ${numofcoins} coins`)
 }
-
+let moresentence= (numofcoins)=>{
+    console.log(`i ran ${numofcoins} coins`)
+}
 
 let coinsamount= (coinsArrays, numofcoins)=> {
     for (let i=0; i<=coinsArrays.length-1;i++)
@@ -39,10 +42,22 @@ let coinsamount= (coinsArrays, numofcoins)=> {
             while (amount-coinsArrays[i]>=0 && amount!== -1){
            amount= amount-coinsArrays[i];
            numofcoins++;
+           console.log(amount);
            if (amount===0){
-           sentence(numofcoins, coinsArrays,i);
+           sentence(numofcoins);
            }
-            }
+           for (let e=0; e<=coinsArrays.length-1;e++)
+           if (amount-coinsArrays[e]>=0 && amount!== -1){
+               while (amount-coinsArrays[e]>=0 && amount!== -1){
+              amount= amount-coinsArrays[e];
+              numofcoins++;
+              console.log(amount);
+              if (amount===0){
+               moresentence(numofcoins);
+               }
+           }
+        }}
+
             if (amount>0) { 
                 numofcoins=0;
                 amount=target;
@@ -51,21 +66,72 @@ let coinsamount= (coinsArrays, numofcoins)=> {
                     while (amount-coinsArrays[e]>=0 && amount!== -1){
                    amount= amount-coinsArrays[e];
                    numofcoins++;
+                   console.log(amount);
                    if (amount===0){
-                    sentence(numofcoins, coinsArrays,e);
+                    sentence(numofcoins);
+                    }
+                
+
+                for (let u=0; u<=coinsArrays.length-1;u++)
+                if (amount-coinsArrays[u]>=0 && amount!== -1){
+                    while (amount-coinsArrays[u]>=0 && amount!== -1){
+                   amount= amount-coinsArrays[u];
+                   numofcoins++;
+                   console.log(amount);
+                   if (amount===0){
+                    sentence(numofcoins);
                     }
                 }
+            }
+        }
                 if (amount>0) { 
                     numofcoins=0;
                     amount=target;
                     for (let p=2; p<=coinsArrays.length-1;p++)
                         if (amount-coinsArrays[p]>=0 && amount!== -1){
                             while (amount-coinsArrays[p]>=0 && amount!== -1){
-                            amount= amount-coinsArrays[p];
+                         amount= amount-coinsArrays[p];
                          numofcoins++;
+                         console.log(amount);
                          if (amount===0){
-                        sentence(numofcoins, coinsArrays,p);
+                        sentence(numofcoins);
                         }
+                        for (let l=0; l<=coinsArrays.length-1;l++)
+                        if (amount-coinsArrays[l]>=0 && amount!== -1){
+                            while (amount-coinsArrays[l]>=0 && amount!== -1){
+                           amount= amount-coinsArrays[l];
+                           numofcoins++;
+                           console.log(amount);
+                           if (amount===0){
+                            moresentence(numofcoins);
+                            }
+                        }
+                    }
+                    if (amount>0) { 
+                        numofcoins=0;
+                        amount=target;
+                        for (let e=1; e<=coinsArrays.length-1;e++)
+                        if (amount-coinsArrays[e]>=0 && amount!== -1){
+                            while (amount-coinsArrays[e]>=0 && amount!== -1){
+                           amount= amount-coinsArrays[e];
+                           numofcoins++;
+                           console.log(amount);
+                           if (amount===0){
+                            sentence(numofcoins);
+                            }}}}   
+
+                            if (amount>0) { 
+                                numofcoins=0;
+                                amount=target;
+                                for (let e=2; e<=coinsArrays.length-1;e++)
+                                if (amount-coinsArrays[e]>=0 && amount!== -1){
+                                    while (amount-coinsArrays[e]>=0 && amount!== -1){
+                                   amount= amount-coinsArrays[e];
+                                   numofcoins++;
+                                   console.log(amount);
+                                   if (amount===0){
+                                    sentence(numofcoins);
+                                    }}}}
                     }}}}
                 }
                 
