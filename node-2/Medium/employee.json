@@ -1,0 +1,71 @@
+{
+    "employees":[{
+        "name":"Kilo",
+        "id":1,
+        "money":70000,
+        "department":"IT"
+    },
+    {
+        "name":"Asmo",
+        "id":2,
+        "money":65000,
+        "department":"Marketing"
+
+    },
+    {
+        "name":"Dimitri",
+        "id":3,
+        "money":90000,
+        "department":"Accounting"
+
+    },
+    {
+        "name":"Katherine",
+        "id":4,
+        "money":80000,
+        "department":"Accounting"
+
+    },
+    {
+        "name":"Elaine",
+        "id":5,
+        "money":60000,
+        "department":"Sales"
+
+    },
+    {
+        "name":"Marinnette",
+        "id":6,
+        "money":73000,
+        "department":"Marketing"
+
+    },
+    {
+        "name":"Vincent",
+        "id":7,
+        "money":80000,
+        "department":"IT"
+
+    },
+    {
+        "name":"Jonny",
+        "id":8,
+        "money":65000,
+        "department":"Security"
+
+    },
+    {
+        "name":"Erica",
+        "id":9,
+        "money":60000,
+        "department":"Marketing"
+
+    },
+    {
+        "name":"Orlando",
+        "id":10,
+        "money":57000,
+        "department":"Sales"
+
+    }]
+}
