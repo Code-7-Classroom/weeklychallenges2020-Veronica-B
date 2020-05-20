@@ -56,12 +56,10 @@
     border-radius: 10%;
     box-shadow: -2px -2px $darkblue;
   }
-  
-  /*side navigation*/
- 
-  .x{
-  display: none; 
+  .side_navigation_mobile__options {
+    display: none;
   }
+  /*side navigation*/
   
   @media only screen and (max-width: 568px) {
 
@@ -87,6 +85,7 @@
       to {left:0px}
     }
     .side_navigation_mobile__options {
+      display: block;
       position: relative;
       font-family: $font-family;
       color: $darkblue;

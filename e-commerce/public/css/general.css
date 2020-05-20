@@ -64,11 +64,11 @@
           box-shadow: -2px -2px #000066;
 }
 
-/*side navigation*/
-.x {
+.side_navigation_mobile__options {
   display: none;
 }
 
+/*side navigation*/
 @media only screen and (max-width: 568px) {
   .side_navigation_mobile {
     display: none;
@@ -111,6 +111,7 @@
     }
   }
   .side_navigation_mobile__options {
+    display: block;
     position: relative;
     font-family: Merriweather, Arial, sans-serif;
     color: #000066;
