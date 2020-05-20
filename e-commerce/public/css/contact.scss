@@ -1,6 +1,6 @@
-$palegreen:#ccffcc;
+$clover:#abffb9;
 $light-lime:#f1ffc9;
-$mint:#b3ffb3;
+$mint:#e1fc90;
 $font-family: Merriweather, Arial, sans-serif;
 $darkblue:#000066;
 $creme-page:#ffffe6;
@@ -20,8 +20,8 @@ $border1px: solid 1px;
 
 .container{
     border-radius: 20%;
-    margin:3%; 
-    border: 2px solid $mint;
+    margin:35px 13% 40px 13%; 
+    border: 2px solid $clover;
     background-color: $light-lime;
     display:flex;
     flex-direction: column;
@@ -34,14 +34,14 @@ $border1px: solid 1px;
     color:$darkblue;
     text-align:center;
     margin-top:3%;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .label{
     margin: 1.5%;
     display:block;
     color:$darkblue;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -49,18 +49,17 @@ $border1px: solid 1px;
     height:50px;
     font-size:25px;
     width:50%;
-    background-color: #ffffe6;
+    background-color: transparent;
     border:none;
     border: $border1px $darkblue;
-    border-bottom-left-radius: 30px ;
-    border-bottom-right-radius: 30px ;
+    border-radius:20% ;
 }
 
 .textarea{
     resize:none;
     display:block;
     height:15vh;
-    width:70vw;
+    width:50vw;
     margin:0 7% 0 7%;
     border: $border1px $darkblue;
     background-color:$creme-page;
@@ -70,12 +69,13 @@ $border1px: solid 1px;
 }
 
 .button{
-    background-color:$palegreen;
+    background-color:$clover;
     border-radius: 30px ;
     color:$darkblue;
-    font-size:35px;
-    margin:7% 39% 7% 39%;
-    padding:30px 85px 30px 85px;
+    font-size:25px;
+    margin:5% 39% 5% 39%;
+    padding:30px;
+    border: 1px solid $mint;
 }
 
 
@@ -84,7 +84,7 @@ $border1px: solid 1px;
     
     .message{
         margin-top:5%;
-        font-size: 20px;
+        font-size: 15px;
     }
     
     .label{

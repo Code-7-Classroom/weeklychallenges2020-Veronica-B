@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
     <title>Product Page</title>
 
 </head>
@@ -34,12 +34,17 @@
                     src="https://cdn.iconscout.com/icon/premium/png-512-thumb/hamburger-12-118481.png"
                    class="navigation__icon--hamburger" alt="hamburger-icon"></button>
             </li>
-
+            
             <li class="navigation__options--hamburger  x" > <button><img
                 src="https://lh3.googleusercontent.com/proxy/eYziCypgD83QLJTib2oBKncnPdzEqjZ8dLWvAE2hpWDJg4FOeRD6deQ4ufPjJScN8qQ0kfvflLIOsjTM976n9av2grE20z0qExDSV42Jr2DLar8"
                class="navigation__icon--hamburger" alt="hamburger-icon"></button>
         </li>
 
+        <div class="hamburger--container">
+            <div class="hamburger--line line--one"></div>
+            <div class="hamburger--line line--two"></div>
+            <div class="hamburger--line line--three"></div>
+        </div>
             </ul>
         </nav>
 
@@ -51,7 +56,7 @@
                 <li class="side_navigation_mobile__options side_navigation_mobile__options__current"><a class="navigation__items" href="products.html">Products
                 </a></li>
 
-                 <li class="side_navigation_mobile__options"><a class="navigation__items" href="contact.html">Contact
+                 <li class="side_navigation_mobile__options"><a class="navigation__items" href="contact.html">Contact Us!
                 </a></li>
             </ul>
         </nav>
@@ -66,35 +71,17 @@
             <a class="filter-button" href="products--9-10.html">Grade 9-10</a>
             <a class="filter-button" href="products--11-12.html">Grade 11-12</a>
     </div>
-    <div class=grid>
-
-        <!-- 1 -->
+    <div class="grid">
         <section class="products">
-            <img class="products__images"
-                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327869409l/7624.jpg"
-                alt="Lord of the Flies book, with a blue to orange gradient, with boys looking at big butterflies. ">
-            <h2 class="products__title">Lord of the Flies by William Golding</h2>
-            <p class="products__paragraph">A group of schoolboys stranded on a deserted island without any adult
-                supervision, and their civilization quickly turns into chaos.
-                <span class="products__paragraph__price"> $5.99</span>
+            <img class="products__images" src="https://pictures.abebooks.com/isbn/9780143039433-us.jpg"
+                alt="Grapes of Wrath book, with an minminalist desgin, it has a man standing on a dirt road. ">
+            <h2 class="products__title">Grapes of Wrath by John Steinback</h2>
+            <p class="products__paragraph">John Steinbeck's The Grapes of Wrath, Tom Joad and his family are forced from their farm in the Depression-era Oklahoma Dust Bowl and set out for California along with thousands of others in search of jobs, land, and hope for a brighter future.
+                <span class="products__paragraph__price"> $9.29</span>
             </p>
-            <button class="products__button--mobile">Add to Cart</button>
+           <button class="products__button--mobile">Add to Cart</button>
         </section>
-<!-- 2 -->
-       
-        <section class="products">
-            <img class="products__images"
-                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394798630l/99561.jpg"
-                alt="Looking for Alaska book, with a black background, that has extinguished candle that has smoke rising upward. ">
-            <h2 class="products__title">Looking for Alaska by John Green</h2>
-            <p class="products__paragraph">Looking for Alaska is a novel by John Green in which shy, unpopular Miles Halter enrolls in Culver Creek Preparatory School and makes new friends. Miles quickly befriends his roommate, Chip "The Colonel" Martin. The Colonel gives Miles a nickname: Pudge.
-                <span class="products__paragraph__price">$6.50</span>
-            </p>
-            <button class="products__button--mobile">Add to Cart</button>
 
-        </section>
-<!-- 3 -->
-       
         <section class="products">
             <img class="products__images"
                 src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578028274l/38447._SY475_.jpg"
@@ -107,10 +94,22 @@
 
         </section>
 
+        <section class="products">
+            <img class="products__images"
+                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490528560l/4671._SY475_.jpg"
+                alt="Great Gatsby book, which has a background of the town with a transparent face of a crying woman overlayed over it.">
+            <h2 class="products__title">The Great Gatsby by F.Scott Fitzgerald</h2>
+            <p class="products__paragraph">The Great Gatsby is a story told by Nick Carraway, who was once Gatsby's neighbor, and he tells the story sometime after 1922, when the incidents that fill the book take place. As the story opens, Nick has just moved from the Midwest to West Egg, Long Island, seeking his fortune as a bond salesman.
+                <span class="products__paragraph__price">$8.99</span>
+            </p>
+            <button class="products__button--mobile">Add to Cart</button>
+
+        </section>
+
         <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
       <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
       <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
-<!-- 4 -->
+
         <section class="products">
             <img class="products__images"
                 src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1532714506l/40961427._SX318_.jpg"
@@ -122,21 +121,21 @@
             <button class="products__button--mobile">Add to Cart</button>
 
         </section>
-<!-- 5 -->
+
         <section class="products">
             <img class="products__images"
-                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657.jpg"
-                alt="To Kill a Mocking Bird book, with an minminalist desgin, there is a tree with a red background. ">
-            <h2 class="products__title">To Kill a Mocking Bird by Harper Lee</h2>
-            <p class="products__paragraph">Set in a small town in the South, during the Depression, follows the life of
-                8-year-old Scout Finch, her brother, Jem, and their father, who is lawyer, and the trial of a young
-                black man accused of a crime.
-                <span class="products__paragraph__price"> $6.99</span>
+                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562424806l/45035018._SY475_.jpg"
+                alt="Frankenstein book, with an creepy drawing of a man. ">
+            <h2 class="products__title">Frankenstein by Mary Shelley</h2>
+            <p class="products__paragraph">The line between humanity and monster is blurred in this 1918 horror novel,
+                where Victor Frankestein, a young scientist, creates new life however he revokes his creation for being
+                an abomination.
+                <span class="products__paragraph__price"> $6.99 </span>
             </p>
             <button class="products__button--mobile">Add to Cart</button>
 
         </section>
-<!-- 6 -->
+
         <section class="products">
             <img class="products__images"
                 src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1523542886l/7445._SY475_.jpg"
@@ -152,7 +151,7 @@
       <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
       <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
       <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
-<!-- 7 -->
+
         <section class="products">
             <img class="products__images"
                 src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562424806l/45035018._SY475_.jpg"
@@ -166,48 +165,8 @@
             <button class="products__button--mobile">Add to Cart</button>
 
         </section>
-<!-- 8 -->
-        <section class="products">
-            <img class="products__images"
-                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490528560l/4671._SY475_.jpg"
-                alt="Great Gatsby book, which has a background of the town with a transparent face of a crying woman overlayed over it.">
-            <h2 class="products__title">The Great Gatsby by F.Scott Fitzgerald</h2>
-            <p class="products__paragraph">The Great Gatsby is a story told by Nick Carraway, who was once Gatsby's neighbor, and he tells the story sometime after 1922, when the incidents that fill the book take place. As the story opens, Nick has just moved from the Midwest to West Egg, Long Island, seeking his fortune as a bond salesman.
-                <span class="products__paragraph__price">$8.99</span>
-            </p>
-            <button class="products__button--mobile">Add to Cart</button>
 
-        </section>
-<!-- 9 -->
 
-        <section class="products">
-            <img class="products__images"
-                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1479863624l/1618._SY475_.jpg"
-                alt="The Curious Incident of the Dog in the Nighttime book, with a red background, and a silhoutte of a poodle upside down.">
-            <h2 class="products__title">The Curious Incident of the Dog in the Nighttime by Mark Haddon</h2>
-            <p class="products__paragraph"> Christopher Boon, a mathematically gifted boy of fifteen with Asperger's syndrome, sees a dog lying on the grass in front of his neighbor's house with a fork sticking out of it. The dog is dead. He goes over to hug the dog and soon the neighbor, Mrs Shears, emerges from her house, screaming.
-                <span class="products__paragraph__price"> $8.99</span>
-            </p>
-            <button class="products__button--mobile">Add to Cart</button>
-
-        </section>
-
-      <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
-      <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
-      <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
-<!-- 10 -->
-        
-        <section class="products">
-            <img class="products__images" src="https://pictures.abebooks.com/isbn/9780143039433-us.jpg"
-                alt="Grapes of Wrath book, with an minminalist desgin, it has a man standing on a dirt road. ">
-            <h2 class="products__title">Grapes of Wrath by John Steinback</h2>
-            <p class="products__paragraph">John Steinbeck's HHHHAsjvALJHVDljsahvfjlhe fliand his family are forced from their farm in the Depression-era Oklahoma Dust Bowl and set out for California along with thousands of others in search of jobs, land, and hope for a brighter future.
-                <span class="products__paragraph__price"> $9.29</span>
-            </p>
-           <button class="products__button--mobile">Add to Cart</button>
-        </section>
-<!-- 11 -->
-   
         <section class="products">
             <img class="products__images"
                 src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438909162l/39933._SY475_.jpg"
@@ -220,28 +179,19 @@
             <button class="products__button--mobile">Add to Cart</button>
 
         </section>
-<!-- 12 -->
-        <section class="products">
-            <img class="products__images"
-                src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401311300l/29209.jpg"
-                alt="The Color of Water: A Black Man's Tribute to His White Mother book, with a tranparent picture people. ">
-            <h2 class="products__title">The Color of Water: A Black Man's Tribute to His White Mother by James Mcbride
-            </h2>
-            <p class="products__paragraph">An autobiography on James Mcbride's life, it depicts his conflicting emotions
-                that he endured as he struggled to discover who he truly was, as his mother narrates the hardships that
-                she had to overcome as a white Jewish woman who chose to marry a black man in 1942.
-                <span class="products__paragraph__price">$9.99</span>
-            </p>
-            <button class="products__button--mobile">Add to Cart</button>
 
-        </section>
+        <p class="products nope">
+            <!-- empty -->
+        </p>
+
 
       <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
       <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
-      <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
-    </div>
 
-    <footer class="footer">
+
+      </div>
+       
+      <footer class="footer">
 
         <a href="https://www.facebook.com/">
             <img class="footer__icon" src="https://i.ya-webdesign.com/images/facebook-icon-png-black-1.png"
@@ -256,9 +206,8 @@
             <img class="footer__icon" src="https://chaminade.edu/wp-content/uploads/2019/08/Twitter-Icon-black-1.png"
                 alt="Twitter icon">
         </a>
-     
-    </footer>
-    <script type="text/javascript" src="nav.js"></script>
-</body>
 
+    </footer>
+    <script type="text/javascript" src="../src/nav.js"></script>
+</body>
 </html>

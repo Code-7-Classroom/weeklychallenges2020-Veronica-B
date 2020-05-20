@@ -14,4 +14,3 @@ function Readthis(total){
 }
 
 Readthis(sum-1)
-

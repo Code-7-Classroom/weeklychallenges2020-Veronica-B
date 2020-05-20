@@ -1,12 +1,12 @@
-$palegreen:#ccffcc;
+$clover:#abffb9;
 $light-lime:#f1ffc9;
-$mint:#b3ffb3;
+$mint:#e1fc90;
 $font-family: Merriweather, Arial, sans-serif;
 $darkblue:#000066;
 $creme-page:#ffffe6;
 $border1px: solid 1px;
  
- @import "scss_partials/nav";
+ @import "./scss_partials/nav";
  @import "scss_partials/footer";
  @import "scss_partials/filter";
  @import "scss_partials/slideshow";
@@ -92,7 +92,7 @@ $border1px: solid 1px;
       color:$darkblue;
       text-align:center;
       margin-top:1%;
-      font-size:65px;
+      font-size:40px;
   }
   
   @media only screen and (min-width:569px) and (max-width: 1200px) and (orientation:landscape){
@@ -128,7 +128,7 @@ $border1px: solid 1px;
     }
    
     .title {
-      font-size: 40px;
+      font-size: 25px;
     }
   
   }

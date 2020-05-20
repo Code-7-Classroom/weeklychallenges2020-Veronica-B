@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="general.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
     <title>Home Page</title>
 </head> 
 
@@ -36,11 +35,19 @@
             </li>
 
             <li class="navigation__options--hamburger x" > <button><img
-                src="https://lh3.googleusercontent.com/proxy/eYziCypgD83QLJTib2oBKncnPdzEqjZ8dLWvAE2hpWDJg4FOeRD6deQ4ufPjJScN8qQ0kfvflLIOsjTM976n9av2grE20z0qExDSV42Jr2DLar8"
+                src=""
                class="navigation__icon--hamburger" alt="hamburger-icon"></button>
         </li>
 
+        <div class="hamburger--container">
+            <div class="hamburger--line line--one"></div>
+            <div class="hamburger--line line--two"></div>
+            <div class="hamburger--line line--three"></div>
+        </div>
+
             </ul>
+
+            
         </nav>
 
         <nav class="side_navigation_mobile">
@@ -51,7 +58,7 @@
                 <li class="side_navigation_mobile__options"><a class="navigation__items" href="products.html">Products
                 </a></li>
 
-                 <li class="side_navigation_mobile__options"><a class="navigation__items" href="contact.html">Contact
+                 <li class="side_navigation_mobile__options"><a class="navigation__items" href="contact.html">Contact Us!
                 </a></li>
             </ul>
         </nav>
@@ -78,8 +85,19 @@
         <button class="products__button--mobile">Add to Cart</button>
 
     </section>
+    <section class="products">
+        <img class="products__images"
+            src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657.jpg"
+            alt="To Kill a Mocking Bird book, with an minminalist desgin, there is a tree with a red background. ">
+        <h2 class="products__title">To Kill a Mocking Bird by Harper Lee</h2>
+        <p class="products__paragraph">Set in a small town in the South, during the Depression, follows the life of
+            8-year-old Scout Finch, her brother, Jem, and their father, who is lawyer, and the trial of a young
+            black man accused of a crime.
+            <span class="products__paragraph__price"> $6.99</span>
+        </p>
+        <button class="products__button--mobile">Add to Cart</button>
 
-    <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
+    </section>
 
     <section class="products">
         <img class="products__images"
@@ -94,22 +112,9 @@
         <button class="products__button--mobile">Add to Cart</button>
 
     </section>
-
     <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
 
-    <section class="products">
-        <img class="products__images"
-            src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657.jpg"
-            alt="To Kill a Mocking Bird book, with an minminalist desgin, there is a tree with a red background. ">
-        <h2 class="products__title">To Kill a Mocking Bird by Harper Lee</h2>
-        <p class="products__paragraph">Set in a small town in the South, during the Depression, follows the life of
-            8-year-old Scout Finch, her brother, Jem, and their father, who is lawyer, and the trial of a young
-            black man accused of a crime.
-            <span class="products__paragraph__price"> $6.99</span>
-        </p>
-        <button class="products__button--mobile">Add to Cart</button>
-
-    </section>
+    <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
 
     <div class= "grid__borders"><button class="products__button">Add to Cart</button></div>
 </div>
@@ -132,11 +137,12 @@
 
     </footer>
 
-    <script type="text/javascript" src="general.js"></script>
-
-    <script type="text/javascript" src="nav.js"></script>
-
 </div>
+
+
+<script type="text/javascript" src="../src/general.js"></script>
+
+<script type="text/javascript" src="../src/nav.js"></script>
 </body>
 
 </html>

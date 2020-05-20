@@ -21,8 +21,8 @@
 
 .container {
   border-radius: 20%;
-  margin: 3%;
-  border: 2px solid #b3ffb3;
+  margin: 35px 13% 40px 13%;
+  border: 2px solid #abffb9;
   background-color: #f1ffc9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,14 +43,14 @@
   color: #000066;
   text-align: center;
   margin-top: 3%;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .label {
   margin: 1.5%;
   display: block;
   color: #000066;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -58,18 +58,17 @@
   height: 50px;
   font-size: 25px;
   width: 50%;
-  background-color: #ffffe6;
+  background-color: transparent;
   border: none;
   border: solid 1px #000066;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-radius: 20%;
 }
 
 .textarea {
   resize: none;
   display: block;
   height: 15vh;
-  width: 70vw;
+  width: 50vw;
   margin: 0 7% 0 7%;
   border: solid 1px #000066;
   background-color: #ffffe6;
@@ -79,18 +78,19 @@
 }
 
 .button {
-  background-color: #ccffcc;
+  background-color: #abffb9;
   border-radius: 30px;
   color: #000066;
-  font-size: 35px;
-  margin: 7% 39% 7% 39%;
-  padding: 30px 85px 30px 85px;
+  font-size: 25px;
+  margin: 5% 39% 5% 39%;
+  padding: 30px;
+  border: 1px solid #e1fc90;
 }
 
 @media only screen and (min-width: 569px) and (max-width: 999px) {
   .message {
     margin-top: 5%;
-    font-size: 20px;
+    font-size: 15px;
   }
   .label {
     margin: 2%;

@@ -10,9 +10,6 @@ input=input.split("");
 //returns array with each letter as it's own index 
 // console.log(input);
 
-
-
-
 let char=input[0];
 
 input.shift(0)
