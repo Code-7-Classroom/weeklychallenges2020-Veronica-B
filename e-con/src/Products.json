@@ -1,8 +1,16 @@
 [
     {
-        "name":"Grapes of Wrath",
+        "name":"Grapes of Wrath by John Steinback",
         "image":"https://pictures.abebooks.com/isbn/9780143039433-us.jpg",
-        "description":"A family is forced from their farm, and they set off for a new life in Cali."
-        ""
+        "description":"A family is forced from their farm, and they set off for a new life in Cali.",
+        "price":"$9.29",
+        "id":"school"
+    },
+    {
+        "name":"The Handmaiden's Tale by Margaret",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578028274l/38447._SY475_.jpg",
+        "description":"A dystopian ",
+        "price":"$9.29",
+        "id":"school"
     }
 ]

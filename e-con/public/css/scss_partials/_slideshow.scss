@@ -1,29 +1,29 @@
 .slideshow{
     display:grid;
-    grid-template-rows: 600px 50px;
+    grid-template-rows: 600px 70px;
     grid-template-columns: 5% 90% 5%;
 
 }
 .arrow{
     color:$creme-page;
-    background-color:#6e5a15;
-    font-size: 30px;
+    background-color:$cafe;
+    font-size: 70px;
 }
 
 .bottom_slideshow{
-    background-color:#6e5a15;
+    background-color:$cafe;
     grid-column:1/4;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .dots{
-        background-image: radial-gradient($creme-page 20%,#6e5a15 20%);
+        background-image: radial-gradient($creme-page 20%,$cafe 20%);
         height:20px;
         width:20px;
 
         &_current{
-            background-image: radial-gradient($creme-page 40%,#6e5a15 20%);
+            background-image: radial-gradient($creme-page 40%,$cafe 20%);
         }
     }
 }
@@ -38,6 +38,10 @@
         display:grid;
         grid-template-rows: 250px 40px;
         grid-template-columns: 10% 80% 10%;
+    }
+
+    .arrow{
+        font-size: 30px;
     }
     .image{
         height: 250px;

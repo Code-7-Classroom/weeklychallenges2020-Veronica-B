@@ -4,7 +4,6 @@
     background-color:$clover;
     height: 100px;
     width: 100%;
-    border-bottom: solid 1px #78ff8e;
     align-items: center;
     justify-content: space-around;
   }
@@ -45,16 +44,15 @@
   }
   .navigation__items:hover {
     color: $creme-page;
-    background-color: $darkblue;
+    background-color: $cafe;
     padding: 15px;
-    border-radius: 10%;
+    border-radius: 50%;
   }
   .active {
     color:$darkblue;
-    background-color:$creme-page;
-    padding: 15px;
-    border-radius: 10%;
-    box-shadow: -2px -2px $darkblue;
+    border-bottom: 5px solid $cafe ;
+    border-radius: 30%;
+    padding: 0px 15px 1px 15px;
   }
   .side_navigation_mobile__options {
     display: none;
@@ -62,6 +60,17 @@
   /*side navigation*/
   
   @media only screen and (max-width: 568px) {
+
+    .sticky{
+      position: sticky;
+      top:0;
+      z-index: 15;
+    }
+
+    .navigation__items:hover {
+      background-color: transparent;
+      color: $darkblue;
+    }
 
     .side_navigation_mobile {
       display: none;

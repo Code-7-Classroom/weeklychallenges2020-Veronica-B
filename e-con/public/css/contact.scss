@@ -1,10 +1,11 @@
-$clover:#abffb9;
+$clover:#7ea047;
 $light-lime:#f1ffc9;
 $mint:#e1fc90;
 $font-family: Merriweather, Arial, sans-serif;
 $darkblue:#000066;
 $creme-page:#ffffe6;
 $border1px: solid 1px;
+$cafe:#6e5a15;
 
 *{
     padding:0;
@@ -21,7 +22,7 @@ $border1px: solid 1px;
 .container{
     border-radius: 20%;
     margin:35px 13% 40px 13%; 
-    border: 2px solid $clover;
+    border: 2px solid $cafe;
     background-color: $light-lime;
     display:flex;
     flex-direction: column;
@@ -51,7 +52,7 @@ $border1px: solid 1px;
     width:50%;
     background-color: $creme-page;
     border:none;
-    border: $border1px $darkblue;
+    border: $border1px $cafe;
     border-radius:20% ;
 }
 
@@ -61,7 +62,7 @@ $border1px: solid 1px;
     height:15vh;
     width:50vw;
     margin:0 7% 0 7%;
-    border: $border1px $darkblue;
+    border: $border1px $cafe;
     background-color:$creme-page;
     font-size: 25px;
     border-bottom-left-radius: 30px ;
@@ -69,13 +70,14 @@ $border1px: solid 1px;
 }
 
 .button{
-    background-color:$clover;
-    border-radius: 30px ;
-    color:$darkblue;
+    background-color:$cafe;
+    border-radius: 50%;
+    color:$light-lime;
     font-size:25px;
     margin:5% 39% 5% 39%;
     padding:30px;
     border: 1px solid $mint;
+    cursor: pointer;
 }
 
 
@@ -133,7 +135,7 @@ $border1px: solid 1px;
 
  .button{
         font-size:15px;
-        padding:10px 15px 10px 15px;
+        padding:15px 25px 15px 25px;
     }
 
 

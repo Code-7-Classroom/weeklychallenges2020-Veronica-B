@@ -2,10 +2,9 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background-color: #abffb9;
+  background-color: #93cf70;
   height: 100px;
   width: 100%;
-  border-bottom: solid 1px #78ff8e;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -50,18 +49,16 @@
 
 .navigation__items:hover {
   color: #ffffe6;
-  background-color: #000066;
+  background-color: #6e5a15;
   padding: 15px;
-  border-radius: 10%;
+  border-radius: 50%;
 }
 
 .active {
   color: #000066;
-  background-color: #ffffe6;
-  padding: 15px;
-  border-radius: 10%;
-  -webkit-box-shadow: -2px -2px #000066;
-          box-shadow: -2px -2px #000066;
+  border-bottom: 5px solid #6e5a15;
+  border-radius: 30%;
+  padding: 0px 15px 1px 15px;
 }
 
 .side_navigation_mobile__options {
@@ -70,6 +67,16 @@
 
 /*side navigation*/
 @media only screen and (max-width: 568px) {
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+  }
+  .navigation__items:hover {
+    background-color: transparent;
+    color: #000066;
+  }
   .side_navigation_mobile {
     display: none;
     -webkit-box-orient: vertical;
@@ -125,7 +132,7 @@
     border-radius: 30%;
     height: 25px;
     padding: 10px;
-    border-bottom: 7px solid #abffb9;
+    border-bottom: 7px solid #93cf70;
     color: #6e5a15;
   }
   .navigation__options {
@@ -193,6 +200,11 @@
   }
 }
 
+.bottom {
+  bottom: 0;
+  position: fixed;
+}
+
 .footer {
   display: -ms-grid;
   display: grid;
@@ -206,7 +218,7 @@
       grid-template-rows: 80px 20px;
   width: 100%;
   height: 110px;
-  background-color: #abffb9;
+  background-color: #93cf70;
 }
 
 .footer__icon {
@@ -241,7 +253,7 @@
           align-items: center;
   height: 65px;
   width: 100%;
-  background-color: #abffb9;
+  background-color: #93cf70;
   opacity: 50%;
 }
 
@@ -291,8 +303,8 @@
 .slideshow {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 600px 50px;
-      grid-template-rows: 600px 50px;
+  -ms-grid-rows: 600px 70px;
+      grid-template-rows: 600px 70px;
   -ms-grid-columns: 5% 90% 5%;
       grid-template-columns: 5% 90% 5%;
 }
@@ -300,7 +312,7 @@
 .arrow {
   color: #ffffe6;
   background-color: #6e5a15;
-  font-size: 30px;
+  font-size: 70px;
 }
 
 .bottom_slideshow {
@@ -342,6 +354,9 @@
         grid-template-rows: 250px 40px;
     -ms-grid-columns: 10% 80% 10%;
         grid-template-columns: 10% 80% 10%;
+  }
+  .arrow {
+    font-size: 30px;
   }
   .image {
     height: 250px;

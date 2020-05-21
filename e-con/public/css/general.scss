@@ -1,17 +1,20 @@
-$clover:#abffb9;
+$clover:#93cf70;
 $light-lime:#f1ffc9;
 $mint:#e1fc90;
 $font-family: Merriweather, Arial, sans-serif;
 $darkblue:#000066;
 $creme-page:#ffffe6;
 $border1px: solid 1px;
+$cafe:#6e5a15;
  
  @import "./scss_partials/nav";
  @import "scss_partials/footer";
  @import "scss_partials/filter";
  @import "scss_partials/slideshow";
 
-
+.flex-body{
+  display: ;
+}
 * {
     padding: 0;
     margin: 0;
