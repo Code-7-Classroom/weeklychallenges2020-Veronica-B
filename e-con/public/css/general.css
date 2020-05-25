@@ -90,12 +90,12 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
     background-color: #f7ffd1;
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
-    z-index: 1;
+    z-index: 8;
     -webkit-animation-name: slide_to_the_left;
             animation-name: slide_to_the_left;
     -webkit-animation-duration: .5s;
@@ -103,7 +103,7 @@
   }
   @-webkit-keyframes slide_to_the_left {
     from {
-      left: -400px;
+      left: -100px;
     }
     to {
       left: 0px;
@@ -111,7 +111,7 @@
   }
   @keyframes slide_to_the_left {
     from {
-      left: -400px;
+      left: -100px;
     }
     to {
       left: 0px;
@@ -198,11 +198,6 @@
     height: 5px;
     margin-top: 5px;
   }
-}
-
-.bottom {
-  bottom: 0;
-  position: fixed;
 }
 
 .footer {

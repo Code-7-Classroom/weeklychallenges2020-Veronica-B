@@ -1,14 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ProductCard from './components/product.js'
 
-function App() {
+
+class App extends React.Component {
+  render(){
   return (
-    <div className="App">
-  
+    <div>
+      <ProductCard />
     
     </div>
   );
+}
 }
 
 export default App;

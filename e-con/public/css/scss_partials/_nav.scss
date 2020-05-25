@@ -78,19 +78,17 @@
       align-items: center;
      text-align: center;
      justify-content:space-between;
-      position: fixed;
+      position: sticky;
       background-color:#f7ffd1;
       height: 100vh;
       width: 100vw;
-      overflow: hidden;
-      z-index: 1;
+      z-index: 8;
       animation-name:slide_to_the_left;
       animation-duration: .5s;
     }
     
     @keyframes slide_to_the_left{
-      from {left:-400px}
-    
+      from {left:-100px}
       to {left:0px}
     }
     .side_navigation_mobile__options {
@@ -109,7 +107,7 @@
       height: 25px;
       padding: 10px;
       border-bottom: 7px solid $clover;
-      color: #6e5a15;
+      color: $cafe;
     }
     
     
@@ -166,7 +164,7 @@
   }
   
   .hamburger--line{
-      background-color:#6e5a15;
+      background-color:$cafe;
       width:100%;
       height:5px;
       margin-top:5px;
