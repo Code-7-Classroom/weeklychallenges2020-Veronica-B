@@ -4,16 +4,88 @@
         "image":"https://pictures.abebooks.com/isbn/9780143039433-us.jpg",
         "description":"A family is forced from their farm, and they set off for a new life in Cali.",
         "price":"$9.29",
-        "id":"school"
+        "id":"11-12"
     },
     {
-        "name":"The Handmaiden's Tale by Margaret",
+        "name":"The Handmaiden's Tale by Margaret Atwood",
         "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1578028274l/38447._SY475_.jpg",
-        "description":"A dystopian ",
-        "price":"$9.29",
-        "id":"school"
+        "description":"A dystopian society where women is seen as property of the state. ",
+        "price":"$6.29",
+        "id":"11-12"
     },
     {
-        
+        "name":"The Great Gatsby by F.Scott Fitzgerald",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490528560l/4671._SY475_.jpg",
+        "description":"A tale of tragedy told by Gatsby's neighbor, Nick",
+        "price":"$7.99",
+        "id":"11-12"
+    },
+    {
+        "name":"1984 by George Orwell",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1532714506l/40961427._SX318_.jpg",
+        "description":"Where everything is controlled by the Party, and Big Brother sees all.",
+        "price":"$7.50",
+        "id":"11-12"
+
+    },
+    {
+        "name":"The Curious Incident of the Dog in the Nighttime by Mark Haddon",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1479863624l/1618._SY475_.jpg",
+        "description":"Christopher Boon, a mathematically gifted boy with Asperger's syndrome, where he solves the murder of his neighbor's dog",
+        "price":"$8.50",
+        "id":"9-10"
+
+    },
+    {
+        "name":"The Glass Castle by Jeanette Walls",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1523542886l/7445._SY475_.jpg",
+        "description":"A memoir of Jeanette's Walls dysfunctional childhood.",
+        "price":"$7.50",
+        "id":"11-12"
+
+    },
+    {
+        "name":"Frankenstein by Margaret Shelly",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562424806l/45035018._SY475_.jpg",
+        "description":"Victor Frankenstein creates a monster whom he duels with.",
+        "price":"$6.59",
+        "id":"11-12"
+
+    },
+    {
+        "name":"To Kill a Mocking Bird by Harper Lee",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657.jpg",
+        "description":"Set in the Depression-era South where a young black man is falsey acussed of a crime he did not commit.",
+        "price":"$6.99",
+        "id":"9-10"
+    },
+    {
+        "name":"How to Read Literature Like a Professor by Thomas C Foster",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438909162l/39933._SY475_.jpg",
+        "description":"Delves into symbols, themes, and other literay techinques that are present in literary works",
+        "price":"$9.59",
+        "id":"11-12"
+    },
+    {
+        "name":"Looking for Alaska by John Green",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394798630l/99561.jpg",
+        "description":"Shy, unpopular Miles Halter enrolls in Culver Creek Preparatory School and makes new friends.",
+        "price":"$6.50",
+        "id":"9-10"
+
+    },
+    {
+        "name":"Lord of the Flies by William Golding",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327869409l/7624.jpg",
+        "description":"A bunch of schoolboys are stranded on an island and make their own civilization.",
+        "price":"$5.89",
+        "id":"9-10"
+    },
+    {
+        "name":"The Color of Water: A Black Man's Tribute to His White Mother by James Mcbride",
+        "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401311300l/29209.jpg",
+        "description":"An autobiography on James Mcbride's life, as well as a depection of his mother's life during the 1940's",
+        "price":"$9.59",
+        "id":"9-10"
     }
 ]
