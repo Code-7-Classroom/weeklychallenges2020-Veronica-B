@@ -2,6 +2,28 @@ import React from 'react';
 
 
 class Navbar extends React.Component {
+
+    handleMobileNav(){
+    const hamburgerIcon= document.querySelector(".hamburger--container");
+    const navBar=document.querySelector(".navigation");
+    const sidenav=document.querySelector(".side_navigation_mobile");
+
+    let e=0;
+
+    hamburgerIcon.addEventListener('click', ()=>{
+    navBar.classList.toggle('change')
+
+
+    if (e===0){
+        sidenav.style.display="flex"
+        e++;
+    }else{
+        sidenav.style.display="none"
+        e--;
+}
+}
+)}
+
     render() {
         return (
             <React.Fragment>
@@ -19,7 +41,7 @@ class Navbar extends React.Component {
                             <li className="navigation__options"> <a className="navigation__items" href="contact.html">Contact Us</a></li>
 
 
-                            <div className="hamburger--container">
+                            <div className="hamburger--container" onClick="handleMobileNav">
                                 <div className="hamburger--line line--one"></div>
                                 <div className="hamburger--line line--two"></div>
                                 <div className="hamburger--line line--three"></div>

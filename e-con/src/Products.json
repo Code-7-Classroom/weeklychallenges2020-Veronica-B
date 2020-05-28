@@ -16,7 +16,7 @@
     {
         "name":"The Great Gatsby by F.Scott Fitzgerald",
         "image":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1490528560l/4671._SY475_.jpg",
-        "description":"A tale of tragedy told by Gatsby's neighbor, Nick",
+        "description":"A tale of tragedy told by Gatsby's neighbor, Nick.",
         "price":"$7.99",
         "id":"11-12"
     },

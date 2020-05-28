@@ -251,20 +251,15 @@
     opacity: 50%;
   }
   
-  .filter-icon {
-    height: 25px;
-    width: 25px;
-    margin: 1% 0 0 2%;
-  }
-  
   .filter-button {
-    height: 25px;
-    background-color: #ffffe6;
+    height: 45px;
+    background-color: #6e5a15;
     padding: 10px;
     -webkit-box-shadow: 1px 2px #000066;
             box-shadow: 1px 2px #000066;
     border-radius: 20%;
     text-decoration: none;
+    color:#ffffe6;
   }
   
   .filter-text {
@@ -281,16 +276,11 @@
           flex-wrap: wrap;
     }
     .filter-button {
-      height: 15px;
+      height: 25px;
       padding: 5px;
     }
     .filter-text {
       font-size: 15px;
-    }
-    .filter-icon {
-      height: 15px;
-      width: 15px;
-      margin: 0 2% 2% 2%;
     }
   }
   
