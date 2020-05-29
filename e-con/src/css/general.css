@@ -237,35 +237,29 @@
 }
 
 .filter-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 65px;
-  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   background-color: #93cf70;
+  padding: 15px;
   opacity: 50%;
 }
 
-.filter-icon {
-  height: 25px;
-  width: 25px;
-  margin: 1% 0 0 2%;
-}
-
 .filter-button {
-  height: 25px;
-  background-color: #ffffe6;
+  height: 45px;
+  background-color: #6e5a15;
   padding: 10px;
-  -webkit-box-shadow: 1px 2px #000066;
-          box-shadow: 1px 2px #000066;
   border-radius: 20%;
   text-decoration: none;
+  color: #ffffe6;
+  margin-right: 10px;
+}
+
+.filter-button__reset {
+  background-color: #9c2824;
 }
 
 .filter-text {
@@ -275,23 +269,17 @@
 
 @media only screen and (max-width: 568px) {
   .filter-box {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     margin-top: -4px;
-    height: 70px;
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
   .filter-button {
-    height: 15px;
-    padding: 5px;
+    height: 45px;
+    margin: 10px;
   }
   .filter-text {
     font-size: 15px;
-  }
-  .filter-icon {
-    height: 15px;
-    width: 15px;
-    margin: 0 2% 2% 2%;
+    margin: 10px;
   }
 }
 
@@ -381,7 +369,6 @@
 }
 
 .products {
-  border: 1px solid #000066;
   border-bottom: none;
 }
 
@@ -410,21 +397,8 @@
   font-size: 23px;
 }
 
-/*This is for desktop, mobile doesn't use this button.*/
-.products__button {
-  background-color: #ccffcc;
-  border-radius: 10px;
-  color: #000066;
-  font-size: 20px;
-  height: 55px;
-  width: 150px;
-  margin: auto auto 15px auto;
-  text-align: center;
-}
-
 /*This is for mobile, because the mobile doesn't use the same grid layout. */
 .products__button--mobile {
-  display: none;
   background-color: #ccffcc;
   border-radius: 10px;
   color: #000066;

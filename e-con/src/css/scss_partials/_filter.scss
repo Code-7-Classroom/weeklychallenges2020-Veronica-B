@@ -1,0 +1,45 @@
+.filter-box{
+    display: grid;
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: auto;
+    background-color: $clover;
+    padding:15px;
+    opacity:50%;
+}
+
+    .filter-button{  
+        height: 45px;
+        background-color: $cafe;
+        padding: 10px;
+        border-radius: 20%;
+        text-decoration: none;
+        color:$creme-page;
+        margin-right: 10px;
+
+        &__reset{
+            background-color: #9c2824;
+        }
+    }
+
+    .filter-text{
+   font-size:23px;
+   color:$darkblue;
+    }
+    
+@media only screen and (max-width: 568px){
+   .filter-box{
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: -4px;
+   }
+
+   .filter-button{  
+    height: 45px;
+    margin: 10px;
+    }
+
+    .filter-text{
+   font-size:15px;
+   margin: 10px;
+    }
+
+}

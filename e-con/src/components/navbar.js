@@ -1,30 +1,28 @@
 import React from 'react';
 
 
-class Navbar extends React.Component {
+const Navbar = () => {
 
-    handleMobileNav(){
-    const hamburgerIcon= document.querySelector(".hamburger--container");
-    const navBar=document.querySelector(".navigation");
-    const sidenav=document.querySelector(".side_navigation_mobile");
+    let show=false;
 
-    let e=0;
-
-    hamburgerIcon.addEventListener('click', ()=>{
-    navBar.classList.toggle('change')
-
-
-    if (e===0){
+    const handleMobileNav= () => {
+        const navBar=document.querySelector(".navigation");
+        const sidenav=document.querySelector(".side_navigation_mobile");
+        navBar.classList.toggle('change')
+    if (show===false){
+        show=true;
+        console.log(show)
+        return(
         sidenav.style.display="flex"
-        e++;
+        )
     }else{
+        show=false;
+        return(
         sidenav.style.display="none"
-        e--;
+        )
 }
 }
-)}
 
-    render() {
         return (
             <React.Fragment>
                 <header>
@@ -41,7 +39,7 @@ class Navbar extends React.Component {
                             <li className="navigation__options"> <a className="navigation__items" href="contact.html">Contact Us</a></li>
 
 
-                            <div className="hamburger--container" onClick="handleMobileNav">
+                            <div className="hamburger--container" onClick={() => handleMobileNav()}>
                                 <div className="hamburger--line line--one"></div>
                                 <div className="hamburger--line line--two"></div>
                                 <div className="hamburger--line line--three"></div>
@@ -64,8 +62,8 @@ class Navbar extends React.Component {
                 </header>
             </React.Fragment>
         )
-    }
 }
+
 
 
 

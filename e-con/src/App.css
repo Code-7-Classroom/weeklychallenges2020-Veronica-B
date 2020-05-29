@@ -1,4 +1,4 @@
-.navigation {
+/* .navigation {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -66,7 +66,7 @@
   }
   
   /*side navigation*/
-  @media only screen and (max-width: 568px) {
+  /* @media only screen and (max-width: 568px) {
     .sticky {
       position: -webkit-sticky;
       position: sticky;
@@ -358,7 +358,7 @@
   }
   
   /*THE PRODUCT AKA BOOKS STYLING THIS IS APPLIED TO PRODUCTS PAGE AND INDEX*/
-  .grid {
+  /* .grid {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -396,9 +396,9 @@
     margin-top: 8%;
     font-size: 23px;
   }
-  
+   */
   /*This is for desktop, mobile doesn't use this button.*/
-  .products__button {
+  /* .products__button {
     background-color: #ccffcc;
     border-radius: 10px;
     color: #000066;
@@ -407,10 +407,10 @@
     width: 150px;
     margin: auto auto 15px auto;
     text-align: center;
-  }
+  } */
   
   /*This is for mobile, because the mobile doesn't use the same grid layout. */
-  .products__button--mobile {
+  /* .products__button--mobile {
     background-color: #ccffcc;
     border-radius: 10px;
     color: #000066;
@@ -451,7 +451,7 @@
   }
   
   /*TABLET POTRAIT nav w/ shopping cart and name of site*/
-  @media only screen and (min-width: 569px) and (max-width: 1119px) and (orientation: portrait) {
+  /* @media only screen and (min-width: 569px) and (max-width: 1119px) and (orientation: portrait) {
     .products__title {
       font-size: 25px;
     }
@@ -466,7 +466,7 @@
     }
   }
   /*Mobile nav w/ shopping cart and name of site*/
-  @media only screen and (max-width: 568px) {
+  /* @media only screen and (max-width: 568px) {
     .grid {
       display: block;
     }
@@ -524,5 +524,5 @@
     .title {
       font-size: 25px;
     }
-  }
-  /*# sourceMappingURL=general.css.map */
+  } */
+  /* # sourceMappingURL=general.css.map */

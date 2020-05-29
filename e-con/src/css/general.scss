@@ -32,7 +32,7 @@ $cafe:#6e5a15;
     }
     
     .products{
-      border: 1px solid $darkblue;
+  
       border-bottom: none;
     }
     .products__images {
@@ -59,20 +59,9 @@ $cafe:#6e5a15;
       font-size: 23px;
     }
   
-    /*This is for desktop, mobile doesn't use this button.*/
-    .products__button {
-      background-color: #ccffcc;
-      border-radius: 10px;
-      color: $darkblue;
-      font-size: 20px;
-      height: 55px;
-      width: 150px;
-      margin:auto auto 15px auto;
-      text-align: center;
-    }
+   
   /*This is for mobile, because the mobile doesn't use the same grid layout. */
     .products__button--mobile{
-      display:none;
       background-color: #ccffcc;
       border-radius: 10px;
       color: $darkblue;

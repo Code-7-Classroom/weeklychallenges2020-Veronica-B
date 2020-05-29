@@ -3,7 +3,7 @@ import product from '../Products.json';
 import '../App.css'
 
 const ProductCard = () => {
-    let [products, setProduct]= useState(product);
+    const [products, setProduct]= useState(product);
     //next I need a function that will take 11-12 id and filter them out, I will create a new array
 
     const handleElevenToTwelve = () =>{
@@ -49,7 +49,7 @@ const ProductCard = () => {
                 <button className="filter-button" onClick={() => handleNineToTen()}>Grade 9-10</button>
                 <button className="filter-button" onClick={() => handleElevenToTwelve()}>Grade 11-12</button>
                 <p className="filter-text">Reset Filter:</p>
-                <button className="filter-button" onClick={() => handleReset()}>Reset</button>
+                <button className="filter-button filter-button__reset" onClick={() => handleReset()}>Reset</button>
             </div>
 
             <div className="grid">
