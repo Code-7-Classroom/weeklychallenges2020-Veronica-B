@@ -1,23 +1,17 @@
 import React from 'react';
-import ProductCard from './components/product.js';
-import Navbar from './components/navbar.js';
-import Footer from './components/footer.js';
-// import Filter from './components/filter'
+import {BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
+//pages
+import Indexpage from './pages/index'
 import './css/general.css'
 
 class App extends React.Component {
+
+
   render(){
   return (
-    <div>
-      <Navbar />
-      {/* <Filter /> */}
-    <div className="background-color">
-         <div className="background_color grid-borders">
-      <ProductCard />
-      </div>
-    </div>
-    <Footer />
-    </div>
+    <Router exact path="/" component={Indexpage}>
+     
+    </Router>
   );
 }
 }

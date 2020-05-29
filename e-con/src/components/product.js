@@ -7,44 +7,69 @@ const ProductCard = () => {
     //next I need a function that will take 11-12 id and filter them out, I will create a new array
 
     const handleElevenToTwelve = () =>{
-        let newProducts=[...product];
+        let newProducts=[...products];
             newProducts=newProducts.filter(item => item.id.includes('11-12'))
-            // {newProducts.filter(item => item.id.includes('11-12'))
+            if (newProducts.length=== 0){
+                let newProducts=[...product];
+                newProducts=newProducts.filter(item => item.id.includes('11-12'))
+                return setProduct(newProducts);
+            }
             return setProduct(newProducts);
        
     }
 
     const handleNineToTen = () =>{
-        let newProducts=[...product];
+        let newProducts=[...products];
             newProducts=newProducts.filter(item => item.id.includes('9-10'))
+
+            if (newProducts.length=== 0){
+                let newProducts=[...product];
+                newProducts=newProducts.filter(item => item.id.includes('9-10'))
+                return setProduct(newProducts)
+            }
             return setProduct(newProducts);
        
     }
 
-    const handleLowToHigh = () => {
+    const handleGreaterThanSeven = () => {
         let newProducts=[...products];
-            newProducts=newProducts.filter(item => parseFloat(item.price.slice(1))<= 7)
+            newProducts=newProducts.filter(item => parseFloat(item.price.slice(1))>= 7)
+            console.log(newProducts.length)
+
+            if (newProducts.length=== 0){
+                let newProducts=[...product];
+                newProducts=newProducts.filter(item => parseFloat(item.price.slice(1))>= 7)
+                return setProduct(newProducts)
+            }
             return setProduct(newProducts);
     }
 
-    const handleHighToLow = () => {
+    const handleLowerThanSeven = () => {
         let newProducts=[...products];
-            newProducts=newProducts.filter(item => parseFloat(item.price.slice(1))>= 7)
+            newProducts=newProducts.filter(item => parseFloat(item.price.slice(1))<= 7)
+
+               
+            if (newProducts.length=== 0){
+                let newProducts=[...product];
+                newProducts=newProducts.filter(item => parseFloat(item.price.slice(1))<= 7)
+                return setProduct(newProducts)
+            }
             return setProduct(newProducts);
+
     }
 
     const handleReset = () =>{
         let newProducts=[...product];
         return setProduct(newProducts);
     }
-        
+    
     return (
 
         <React.Fragment>
             <div className="filter-box">
                 <p className="filter-text">Price:</p>
-                <button className="filter-button"  onClick={() => handleLowToHigh()}>Over $7 </button>
-                <button className="filter-button" onClick={() => handleHighToLow()} href="products--hightolow.html">Under $7</button>
+                <button className="filter-button" onClick={() => handleGreaterThanSeven()}>Over $7 </button>
+                <button className="filter-button" onClick={() => handleLowerThanSeven()} >Under $7</button>
                 <p className="filter-text">Category:</p>
                 <button className="filter-button" onClick={() => handleNineToTen()}>Grade 9-10</button>
                 <button className="filter-button" onClick={() => handleElevenToTwelve()}>Grade 11-12</button>

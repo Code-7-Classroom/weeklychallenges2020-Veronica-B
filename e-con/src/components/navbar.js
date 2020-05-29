@@ -30,7 +30,7 @@ const Navbar = () => {
                         <ul className="navigation">
                             <li className="navigation__options"> <img className="navigation__company_logo" src="images/logo.png" alt="company logo" /></li>
 
-                            <li className="navigation__options"> <a className="navigation__items" href="index.html">Home</a> </li>
+                            <li className="navigation__options"> <a  className="navigation__items" href="index.html">Home</a> </li>
 
 
                             <li className="navigation__options"> <a className="navigation__items active" href="products.html">Products</a></li>
@@ -60,6 +60,7 @@ const Navbar = () => {
                         </ul>
                     </nav>
                 </header>
+
             </React.Fragment>
         )
 }
