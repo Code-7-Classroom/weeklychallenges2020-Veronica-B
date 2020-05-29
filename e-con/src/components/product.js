@@ -4,13 +4,37 @@ import '../App.css'
 
 const ProductCard = () => {
     let [products, setProduct]= useState(product);
-  
     //next I need a function that will take 11-12 id and filter them out, I will create a new array
 
-    const handleElevenToTwelve = (products) =>{
+    const handleElevenToTwelve = () =>{
+        let newProducts=[...product];
+            newProducts=newProducts.filter(item => item.id.includes('11-12'))
+            // {newProducts.filter(item => item.id.includes('11-12'))
+            return setProduct(newProducts);
+       
+    }
+
+    const handleNineToTen = () =>{
+        let newProducts=[...product];
+            newProducts=newProducts.filter(item => item.id.includes('9-10'))
+            return setProduct(newProducts);
+       
+    }
+
+    const handleLowToHigh = () => {
         let newProducts=[...products];
-        newProducts=newProducts.filter(item => item.id.includes('11-12'))
-        // {newProducts.filter(item => item.id.includes('11-12'))
+            newProducts=newProducts.filter(item => parseFloat(item.price.slice(1))<= 7)
+            return setProduct(newProducts);
+    }
+
+    const handleHighToLow = () => {
+        let newProducts=[...products];
+            newProducts=newProducts.filter(item => parseFloat(item.price.slice(1))>= 7)
+            return setProduct(newProducts);
+    }
+
+    const handleReset = () =>{
+        let newProducts=[...product];
         return setProduct(newProducts);
     }
         
@@ -19,11 +43,13 @@ const ProductCard = () => {
         <React.Fragment>
             <div className="filter-box">
                 <p className="filter-text">Price:</p>
-                <button className="filter-button"> Low to High </button>
-                <button className="filter-button" href="products--hightolow.html">High to Low</button>
+                <button className="filter-button"  onClick={() => handleLowToHigh()}>Over $7 </button>
+                <button className="filter-button" onClick={() => handleHighToLow()} href="products--hightolow.html">Under $7</button>
                 <p className="filter-text">Category:</p>
-                <button className="filter-button" href="products--9-10.html">Grade 9-10</button>
-                <button className="filter-button" onClick={() => handleElevenToTwelve(products)}>Grade 11-12</button>
+                <button className="filter-button" onClick={() => handleNineToTen()}>Grade 9-10</button>
+                <button className="filter-button" onClick={() => handleElevenToTwelve()}>Grade 11-12</button>
+                <p className="filter-text">Reset Filter:</p>
+                <button className="filter-button" onClick={() => handleReset()}>Reset</button>
             </div>
 
             <div className="grid">
