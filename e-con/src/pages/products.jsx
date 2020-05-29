@@ -3,7 +3,7 @@ import ProductCard from '../components/product.js';
 import Navbar from '../components/navbar.js';
 import Footer from '../components/footer.js';
 // import Filter from './components/filter'
-import './css/general.css'
+import '../css/general.css'
 
 class ProductsPage extends React.Component {
   render(){
